@@ -1,0 +1,362 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELGAMAL For Import & Export</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#081b33;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+color:#fff;
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#25D366;
+padding:14px 30px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+color:#081b33;
+}
+
+.about{
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card i{
+font-size:45px;
+color:#0b4ea2;
+margin-bottom:15px;
+}
+
+.products img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.stats{
+background:#081b33;
+color:white;
+}
+
+.stat-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.stat h2{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.contact{
+background:#10294d;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">ELGAMAL</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+<h1>ELGAMAL</h1>
+
+<p>
+Import & Export Company
+Specialized in Elevator Spare Parts
+</p>
+
+<a href="https://wa.me/201019331603" class="btn">
+WhatsApp Now
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<p class="about">
+ELGAMAL For Import & Export is a leading supplier of
+elevator spare parts and technical solutions.
+We provide high quality products, reliable service,
+and fast delivery for projects across Egypt and
+international markets.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-ship"></i>
+<h3>Import Services</h3>
+<p>Importing elevator spare parts from global manufacturers.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-globe"></i>
+<h3>Export Services</h3>
+<p>Exporting products to customers around the world.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-tools"></i>
+<h3>Technical Support</h3>
+<p>Professional support for installation and maintenance.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-truck"></i>
+<h3>Fast Delivery</h3>
+<p>Reliable logistics and fast shipping solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="products" class="products">
+
+<h2 class="title">Our Products</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800">
+<h3>Elevator Motors</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800">
+<h3>Control Panels</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800">
+<h3>Safety Components</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<h2 class="title" style="color:white;">Our Numbers</h2>
+
+<div class="stat-grid">
+
+<div class="stat">
+<h2>1000+</h2>
+<p>Products</p>
+</div>
+
+<div class="stat">
+<h2>500+</h2>
+<p>Projects</p>
+</div>
+
+<div class="stat">
+<h2>300+</h2>
+<p>Clients</p>
+</div>
+
+<div class="stat">
+<h2>15+</h2>
+<p>Countries</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title" style="color:white;">Contact Us</h2>
+
+<p><i class="fas fa-map-marker-alt"></i> Mansoura - Egypt</p>
+
+<p><i class="fas fa-phone"></i> 01019331603</p>
+
+<p><i class="fas fa-envelope"></i> aliesmailtf@gmail.com</p>
+
+<p>
+<a href="https://wa.me/201019331603" class="btn">
+Contact via WhatsApp
+</a>
+</p>
+
+</section>
+
+<footer>
+© 2026 ELGAMAL For Import & Export - All Rights Reserved
+</footer>
+
+<a href="https://wa.me/201019331603" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
+```
